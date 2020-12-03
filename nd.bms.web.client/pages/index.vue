@@ -62,6 +62,7 @@
           </a>
         </v-card-text>
         <v-card-actions>
+          <a href="/">Home</a>
           <v-spacer />
           <v-btn
             color="primary"

@@ -1,0 +1,16 @@
+{
+  "generator-webpack-angularjs": {
+    "app": "nd.tr.pos.web.client",
+    "module": "b2b",
+    "services": [
+      "LoginSvc"
+    ],
+    "directives": [
+      "titlecase"
+    ],
+    "states": [
+      "login",
+      "home"
+    ]
+  }
+}

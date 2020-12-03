@@ -58,6 +58,11 @@ export default {
     }
   },
 
+  // Router Configuration
+  router: {
+    base: '/booking/'
+  },
+
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
   }
