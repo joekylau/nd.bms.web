@@ -50,6 +50,7 @@
       </v-btn>
       <v-toolbar-title v-text="title" />
       <v-spacer />
+      <v-toolbar-title v-text="username" />
       <v-btn
         icon
         @click.stop="rightDrawer = !rightDrawer"
@@ -91,6 +92,8 @@
 <script>
 export default {
   data () {
+    const username = this.$cookies.get("username");
+
     return {
       clipped: false,
       drawer: false,
@@ -110,7 +113,8 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Vuetify.js'
+      title: 'BMS',
+      username: username
     }
   }
 }

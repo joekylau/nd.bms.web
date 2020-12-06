@@ -12,13 +12,16 @@ require('font-awesome/css/font-awesome.css')
 require('popper.js/dist/popper.js');
 require('jquery/dist/jquery.js');
 
+// Third party
+require('angular-cookies');
+
 // util
 function importAll(r) {
   r.keys().forEach(r);
 }
 
 // begin module
-angular.module('b2b', ['ui.router', 'ngStorage']);
+angular.module('b2b', ['ui.router', 'ngStorage', 'ngCookies']);
 
 // app deps
 require('./constants.js');

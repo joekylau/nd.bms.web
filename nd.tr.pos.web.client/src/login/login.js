@@ -3,13 +3,14 @@ var angular = require('angular');
 
 require('../css/login.css')
 
-function loginCtrl($scope, $sessionStorage, $state, $filter, LoginSvc) {
+function loginCtrl($scope, $sessionStorage, $state, $filter, $cookies, LoginSvc) {
   $scope.progress = false;
   $scope.title = 'nd.tr.pos.web.client'
   $scope.copyrightYear = new Date().getFullYear();
-  LoginSvc.logout();
+  //LoginSvc.logout();
   $scope.submitForm = function(isValid){
     if ( isValid ) {
+      $cookies.put('username', $scope.username);
       $scope.progress = true;
       window.location.href = 'booking';
     }
@@ -28,6 +29,7 @@ loginCtrl.$inject = [
   '$sessionStorage',
   '$state',
   '$filter',
+  '$cookies',
   'LoginSvc'
 ]
 

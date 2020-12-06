@@ -34,13 +34,14 @@
     "uglifyjs-webpack-plugin": "^1.2.3"
   },
   "dependencies": {
-    "@uirouter/angularjs": "^1.0.15",
-    "angular": "^1.6.9",
-    "bootstrap": "^4.0.0",
+    "@uirouter/angularjs": "^1.0.28",
+    "angular": "^1.8.2",
+    "angular-cookies": "^1.8.2",
+    "bootstrap": "^4.5.3",
     "font-awesome": "^4.7.0",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.1",
     "ngstorage": "^0.3.11",
     "nprogress": "^0.2.0",
-    "popper.js": "^1.12.9"
+    "popper.js": "^1.16.0"
   }
 }

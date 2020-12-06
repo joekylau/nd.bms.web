@@ -2,6 +2,7 @@ FROM node:14.15.1-buster AS builder
 WORKDIR /app
 COPY package.json .
 RUN npm install
+RUN npm audit fix
 COPY . .
 RUN npm run build
 
